@@ -300,7 +300,7 @@ def start_cmd(message):
     text = (
         f"✨ <b>{BOT_NAME}</b> ✨\n"
         "╔══════════════════════════╗\n"
-        "║  🌟 Ultimate Group Control  ║\n"
+        "║  🌟 Eyes Group Control  ║\n"
         "╚══════════════════════════╝\n\n"
         "📌 Add me to your group & make me admin\n"
         "━━━━━━━━━━━━━━━━━━━━━━━\n"
@@ -1068,4 +1068,6 @@ if __name__ == "__main__":
     print("="*60)
     print("✅ Bot is running!")
     print("="*60)
+    bot.infinity_polling()
+if __name__ == "__main__":
     bot.infinity_polling()
