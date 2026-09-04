@@ -2,8 +2,10 @@ services:
   - type: web
     name: illusioneyes-bot
     runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
+    region: oregon
+    plan: free
+    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt"
+    startCommand: "python bot.py"
     envVars:
       - key: BOT_TOKEN
-        value: 8718352884:AAHKzLuJPAfeC8Ov93rqrQrmY-ertAH1GSM
+        value: "8718352884:AAHKzLuJPAfeC8Ov93rqrQrmY-ertAH1GSM"
